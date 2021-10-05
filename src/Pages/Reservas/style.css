@@ -1,0 +1,99 @@
+body {
+  font-family: 'Gang', Verdana, sans-serif;
+  color: salmon;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  padding: 2rem 2rem 0 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+fieldset {
+  width: 400px;
+  margin: 2rem 1rem;
+  border-radius: 8px;
+  border: solid 1px salmon;
+  box-shadow: 0 4px 5px -2px salmon;
+}
+
+form {
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2{
+  padding: 1rem 0 .5rem 0;
+}
+
+label {
+  padding: .40rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+label input {
+  width: 60%;
+}
+
+select {
+  width: 30%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons input{
+  margin: 1rem 0 0 0 ;
+  font-family: 'Gang', Verdana, sans-serif;
+  width: 45%;
+  border-radius: 40rem;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  color: white;
+}
+
+.buttons input[type="submit"]{
+  background: salmon;
+}
+
+.buttons input[type="reset"]{
+  background: gray;
+}
+
+.buttons input[type="name"], 
+.buttons input[type="email"]{
+  font-size: .9rem;
+  border: none;
+  border-bottom: solid salmon;
+
+}
+
+@media (max-width: 400px){
+  
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
