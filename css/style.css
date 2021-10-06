@@ -1,0 +1,194 @@
+* {
+  font-family: 'demo';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'demo';
+  background-color:rgb(236, 209, 206);
+}
+
+#borda{
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+
+@font-face {
+  font-family: 'demo';
+  src: url('/fonts/demo.ttf') format('truetype');
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+img {
+  width: 35vw;
+  margin-right: 50px;
+}
+
+legend{
+  margin-left: 20px;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+aside {
+  display: flex;
+  background-color: rgb(212, 128, 119);
+  padding: 60px;
+  height: 65%;
+  border-radius: 10px;
+  box-shadow: 10px 15px 10px 5px rgb(105, 99, 99); 
+}
+
+.icone {
+  margin: auto;
+  margin-top: -22px;
+  margin-left: 8%;
+  margin-bottom: 30px;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+ul {
+  margin-left: 25%;
+}
+
+li:hover{
+  color: rgb(255, 0, 0);
+}
+
+li {
+  margin-bottom: 23px;
+  margin: auto;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+}
+p{
+  color: rgb(158, 35, 66);
+  font-size: 20px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 80vh;
+  margin: 5% 21%;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(48, 197, 11);
+
+}
+
+@media (max-width: 1529px) {
+  aside{
+    height: 70%;
+    margin-left: 1vw;
+  }
+  
+  img{
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1310px) {
+
+  aside{
+    width: 21vw;
+    height: 50vh;
+  }
+
+  img{
+    width: 28vw;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  aside{
+    width: 32vw;
+    height: 60vh;
+  }
+  ul{
+    margin-left: 10%;
+  }
+
+  fieldset{
+    margin: 11vw 7vh;
+    width: 80vw;
+    height: 85vh;
+  }
+  img{
+    width: 38vw;
+  }
+}
+
+@media (max-width: 770px) {
+
+  aside{
+    width: 30vw;
+    height: 50vh;
+  }
+
+  fieldset{
+    margin: 11vw 7vh;
+    width: 80vw;
+    height: 85vh;
+  }
+  img{
+    width: 38vw;
+  }
+}
+
+@media (max-width: 415px) {
+  html{
+    overflow-x: hidden;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  section{
+    display: block;
+  }
+  ul{
+    margin-left: 30%;
+  }
+
+  fieldset{
+    border: none;
+  }
+  body{
+    background-color: white;      
+  }
+  p{
+    color: white;
+  }
+
+  aside{
+    width: 76vw;
+    height: 67vh;
+  }
+
+  img{
+    width: 40vw;
+    margin: 20px 0 0 64px;
+  }
+  .icone{
+    width: 27vw;
+  }
+
+  li{
+    font-size: 14px;
+  }
+}
