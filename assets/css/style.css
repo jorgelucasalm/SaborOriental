@@ -18,7 +18,7 @@ body {
 @font-face {
   font-family: 'demo';
   src: url('../fonts/demo.ttf') format('truetype');
-}
+} 
 
 section {
   display: flex;
