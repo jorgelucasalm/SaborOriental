@@ -1,0 +1,197 @@
+:root{
+  --primary-color: #fa7f72;
+  --primary-color-dark: #f73520;
+  --secondary-color: #808080;
+
+  --button-hover-save: #f85241;
+  --button-hover-reset: #676767;
+}
+
+body {
+  font-family: 'Gang', Verdana, sans-serif;
+  color: var(--primary-color);
+}
+
+main {
+  padding: 3rem 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1440px;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.date-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset { 
+  margin: 2rem 1rem;
+  border-radius: 8px;
+  border: solid 1px var(--primary-color);
+  box-shadow: 0 4px 5px -2px var(--primary-color);
+}
+
+form {
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2{
+  padding: 1rem 0 .5rem 0;
+}
+
+label {
+  padding: .8rem 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container label input {
+  width: 60%;
+  
+  border: none;
+	border-bottom: 0.125rem solid var(--primary-color);
+  padding: .1rem .7rem;
+}
+
+.date-time label input{
+  width: max-content;
+  padding: .1rem 0 .1rem .7rem;
+}
+
+.date-time label input{
+  margin-left: 1rem;
+}
+
+.date-time label input[type="date"]{
+  margin-right: 2rem;
+}
+
+.container label input:focus,
+select:focus{
+  outline: none;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-color: var(--primary-color-dark);
+}
+
+select {
+  border: none;
+	border-bottom: 0.125rem solid var(--primary-color);
+  padding: .1rem .7rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons input{
+  margin: 1rem 0 0 0 ;
+  font-family: 'Gang', Verdana, sans-serif;
+  width: 45%;
+  border-radius: 40rem;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  color: white;
+  transition: ease-in .2s;
+}
+
+
+.buttons input[type="button"]{
+  background: var(--primary-color);
+}
+
+.buttons input[type="reset"]{
+  background: var(--secondary-color);
+}
+
+.buttons input[type="button"]:hover{
+  background-color: var(--button-hover-save);
+}
+
+.buttons input[type="reset"]:hover{
+  background-color: var(--button-hover-reset);
+}
+
+.name-email label{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-email input[type="text"], 
+.name-email input[type="email"]{
+  padding: .1rem .7rem;
+	height: 2rem;
+	font-size: .9rem;    
+  width: 75%;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px){
+  
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  .register{
+    padding: 2rem;
+  }
+
+  img{
+    width: 200px;
+  }
+
+  .date-time label input[type="date"]{
+    margin-right: 1rem;
+  }
+
+  select {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .date-time {
+    display: block;
+  }
+
+  .date-time label input[type="date"]{
+    margin-right: 0;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  .register label{
+    justify-content: space-between;
+  }
+}
