@@ -21,11 +21,11 @@
             <div class="date-time">
               <div class="section-date">
                 <label for="date">Data:<input type="date" id="date"></label>
-                <span class="date-warning"></span>
+                <span class="date-warning warning"></span>
               </div>
               <div class="section-time">
                 <label for="time">Hora:<input type="time" id="time"></label>
-                <span class="time-warning"></span>
+                <span class="time-warning warning"></span>
               </div>
             </div>
 
@@ -41,10 +41,10 @@
             <div class="name-email">
               <h2>Contato Principal</h2>
               <label for="name">Nome:<input type="text" id="name"></label>
-              <span class="name-warning"></span>
+              <span class="name-warning warning"></span>
 
               <label for="email">Email:<input type="email" id="email"></label>
-              <span class="email-warning"></span>
+              <span class="email-warning warning"></span>
             </div>
 
             <div class="buttons">
@@ -116,7 +116,13 @@
 
     if (verify) {
       const modal = document.querySelector('.modal')
+      const warningRemove = document.querySelectorAll('.warning')
+      for (var i = 0; i < warningRemove.length; i++) {
+        warningRemove[i].innerHTML = "";
+      }
+
       modal.style.visibility = 'visible';
+
     } else {
       return
     }
