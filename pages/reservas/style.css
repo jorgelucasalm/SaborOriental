@@ -5,6 +5,8 @@
 
   --button-hover-save: #f85241;
   --button-hover-reset: #676767;
+
+  --warning-color: #ff0000;
 }
 
 body {
@@ -13,7 +15,9 @@ body {
 }
 
 main {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 .title {
@@ -37,6 +41,10 @@ main {
 
 .date-time{
   display: flex;
+  justify-content: space-between;
+}
+
+label[for="time"]{
   justify-content: space-between;
 }
 
@@ -74,9 +82,6 @@ label {
 .date-time label input{
   width: max-content;
   padding: .1rem 0 .1rem .7rem;
-}
-
-.date-time label input{
   margin-left: 1rem;
 }
 
@@ -95,6 +100,7 @@ select {
   border: none;
 	border-bottom: 0.125rem solid var(--primary-color);
   padding: .1rem .7rem;
+  margin-left: 1rem;
 }
 
 .buttons {
@@ -114,17 +120,16 @@ select {
   transition: ease-in .2s;
 }
 
-
 .buttons input[type="button"]{
   background: var(--primary-color);
 }
 
-.buttons input[type="reset"]{
-  background: var(--secondary-color);
-}
-
 .buttons input[type="button"]:hover{
   background-color: var(--button-hover-save);
+}
+
+.buttons input[type="reset"]{
+  background: var(--secondary-color);
 }
 
 .buttons input[type="reset"]:hover{
@@ -150,6 +155,54 @@ select {
   justify-content: center;
 }
 
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000ab;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: grid;
+  place-content: center;
+  visibility: hidden;
+}
+
+.modal-content{
+  background-color: #fff;
+  width: 400px;
+  padding: 2rem 2rem 1rem;
+  border-radius: 5px;
+}
+
+.modal-content h3, p{
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.modal-content .close-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content input {
+  background-color: var(--primary-color);
+  font-family: 'Gang', Verdana, sans-serif;
+  width: 50%;
+  border-radius: 40rem;
+  cursor: pointer;
+  border: none;
+  padding: .5rem 1rem;
+  color: white;
+  transition: ease-in .2s;
+}
+
+span {
+  color: var(--warning-color);
+  font-size: .8rem;
+}
+
 @media (max-width: 900px){
   
   .container {
@@ -167,14 +220,6 @@ select {
 
   img{
     width: 200px;
-  }
-
-  .date-time label input[type="date"]{
-    margin-right: 1rem;
-  }
-
-  select {
-    margin-left: 1rem;
   }
 }
 
@@ -194,4 +239,11 @@ select {
   .register label{
     justify-content: space-between;
   }
+
+  .modal-content{
+    background-color: #fff;
+    width: 250px;
+    padding: 2rem 1rem 1rem;
+  }
+
 }
