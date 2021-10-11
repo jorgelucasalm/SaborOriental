@@ -1,0 +1,41 @@
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(255, 134, 97);
+}
+
+div{
+ background-color: rgba(255, 255, 255, 0.418);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  border-radius: 15px;
+
+}
+
+input{
+ padding: 15px;
+ border: none;
+ outline: none;
+ font-size: 15px;
+}
+
+button {
+background-color: salmon;
+border: none;
+padding: 15px;
+border-radius: 10px;
+color: white;
+font-size: 15px;
+transition: ease-in .3s;
+}
+
+button:hover{
+background-color: #f73520;
+cursor: pointer;
+}
+
+span {
+  color: red;
+}
