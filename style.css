@@ -1,0 +1,327 @@
+@font-face {
+  font-family: 'demo';
+  src: url('./assets/fonts/go3v2.ttf') format('truetype');
+} 
+
+* {
+  font-family: 'demo';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'demo';
+  background-color:rgb(236, 209, 206);
+}
+
+/* button{
+  background: transparent;
+  border: none !important;
+  display: flex;
+  
+} */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+img {
+  width: 35vw;
+  margin-right: 50px;
+}
+
+legend{
+  margin-left: 20px;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+aside {
+  display: flex;
+  background-color: rgb(212, 128, 119);
+  padding: 60px;
+  height: 65%;
+  border-radius: 10px;
+  box-shadow: 10px 15px 10px 5px rgb(105, 99, 99); 
+}
+
+.icone {
+  margin: auto;
+  margin-top: -22px;
+  margin-left: 8%;
+  margin-bottom: 30px;
+  width: 8vw;
+  border-radius: 50%;
+}
+
+ul {
+  margin-left: 24%;
+  margin-top: 7%;
+}
+
+li:hover{
+  color: rgb(255, 255, 255);
+}
+
+li {
+  margin: 20% 0% 0% -5%;       
+  font-size: 1.4rem;
+  color: rgb(170, 69, 58);
+}
+
+p{
+  color: rgb(158, 35, 66);
+  font-size: 20px;
+}
+
+fieldset {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 80vh;
+  margin: 5% 21%;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(48, 197, 11);
+
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+  }to{
+    opacity: 1;
+    transform: scale(1);
+
+  }
+}
+
+fieldset{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 50ms;
+}
+
+@media (max-width: 1529px) {
+  aside{
+    height: 70%;
+    margin-left: 1vw;
+  }
+  
+  img{
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1301px) {
+
+  aside{
+    width: 21vw;
+    height: 60vh;
+  }
+
+  img{
+    width: 28vw;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  aside{
+    width: 32vw;
+    height: 72vh;
+  }
+  ul{
+    margin-left: 10%;
+  }
+
+  fieldset{
+    margin: 11vw 7vh;
+    width: 80vw;
+    height: 85vh;
+  }
+  img{
+    width: 38vw;
+  }
+}
+
+@media (max-heigth: 940px) {
+
+  aside{
+    width: 21vw;
+    height: 55vh;
+  }
+  img{
+    width: 28vw;
+  }
+}
+
+@media (max-width: 770px) {
+
+  aside{
+    width: 30vw;
+    margin-left: -3%;
+    height: 70vh;
+  }
+
+  li{
+    padding-top: 12%;
+  }
+
+  fieldset{
+    margin: 11vw 7vh;
+    width: 80vw;
+    height: 85vh;
+  }
+  img{
+    width: 38vw;
+  }
+}
+
+@media (max-width: 415px) {
+  *{padding: 0;
+    margin: -1px;
+  }
+  section{
+    display: block;
+  }
+  ul{
+    margin-left: 33%;
+    margin-top: -27%;
+  }
+
+  fieldset{
+    border: none;
+  }
+  body{
+    background-color: white;      
+  }
+  p{
+    color: white;
+  }
+
+  aside{
+    width: 76vw;
+    height: 76vh;
+  }
+
+  img{
+    width: 40vw;
+    margin: 2px 0px -3px 65px;
+  }
+  .icone{
+    width: 27vw;
+    margin-left: 21%;
+    margin-top: -22%;
+  }
+
+  li{
+    font-size: 17px;
+    padding-top: 5%;
+  }
+}
+
+  @media (max-width: 375px) {
+    *{padding: 0px 4px 0px 1px;
+      margin: -1px;
+    }
+    section{
+      display: block;
+    }
+    ul{
+      margin-left: 30%;
+    }
+  
+    fieldset{
+      border: none;
+    }
+
+    ul{
+      margin-top: -47px;
+      margin-left: 29px;
+    }
+
+    body{
+      background-color: white;      
+    }
+    
+    p{
+      color: white;
+    }
+  
+    aside{
+      width: 78vw;
+      height: 76vh;
+    }
+  
+    img{
+      width: 41vw;
+      margin: 0px 0px -4px 64px;
+    }
+    .icone{
+      width: 28vw;
+      margin-left: 17%;
+      margin-top: -23%;
+    }
+  
+    li{
+      font-size: 15px;
+      padding-top: 0%;
+    }
+  }
+
+    @media (max-width: 320px) {
+      
+      *{
+        padding: 0;
+        margin: -1px;
+      }
+      section{
+        display: block;
+      }
+      
+      fieldset{
+        border: none;
+      }
+  
+      ul{
+        margin-top: -40px;
+        margin-left: 22px;
+        padding: 0px ​15px 0px 0px;
+      }
+  
+      body{
+        background-color: white;      
+      }
+      p{
+        color: white;
+      }
+    
+      aside{
+        width: 78vw;
+        height: 83vh;
+      }
+    
+      img{
+        width: 47vw;
+        margin: -4px 0px -4px 48px;
+      }
+      
+      .icone{
+        width: 28vw;
+        margin-top: -31%;
+      }
+    
+      li{
+        font-size: 15px;
+        padding-top: 0%;
+      }
+    }
