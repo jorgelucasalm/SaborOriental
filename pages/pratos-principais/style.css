@@ -1,0 +1,58 @@
+:root{
+  --primary-color: #fa7f72;
+  --primary-color-dark: #f73520;
+  --secondary-color: #808080;
+
+  --button-hover-save: #f85241;
+  --button-hover-reset: #676767;
+
+  --warning-color: #ff0000;
+}
+
+body {
+  font-family: 'Gang', Verdana, sans-serif;
+  color: var(--primary-color);
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.title h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.dishes {
+
+}
+
+.tns-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tns-controls [aria-controls] {
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: #000;
+  background: #66CCFF;
+  border-radius: 3px;
+  border: 0;
+}
+
+.tns-nav {
+  display: none;
+}
+
+.dish img {
+  width: 400px;
+}
+
+.dish p {
+  padding-top: 1rem;
+  text-align: center;
+}
