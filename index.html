@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script rel="script" type="text/javascript" src="app.js"></script>
+    <title>Contate-Nos</title>
+</head>
+<body>
+    <div class="nav">
+        <nav class="lista">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Pratos Populares</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-5 col-xs-12 texto" >
+            <img src="logo.png" alt="logo" id="logo">
+        </div>
+            <div class="col-md-11 col-sm-12 col-xs-12 texto1">
+            <h2 id="pp">Contate-Nos</h2>
+            <p id="pp">Dúvidas, críticas ou sugestões, entre em contato conosco.<br>
+                Nós valorizamos a sua opinião e queremos ouvir sobre sua experiência em nossos restaurantes.
+            </p>
+        </div>
+        </div>
+
+        <div class="imagens">
+
+         </div>
+         <form action="" method="post" onsubmit="return validar()" name="dados">
+        <div class="col-md-11 col-sm-11 col-xs-12 formulario">
+        <div class="col-md-11 col-sm-12 col-xs-12 conteudo">
+            <h2 id="parte1">Entrar em contato</h2>
+
+			<input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+
+            <input type="email" name="email" id="email" placeholder="Digite seu email"><br>
+
+			<input type="tel" name="telefone" id="telefone" placeholder="(81)99999-9999"><br>
+
+			<textarea id="comentario" name="comentario" placeholder="Digite sua mensagem"></textarea><br>
+
+            <input type="submit" value="Enviar" class="enviar" onmouseover="style.color='salmon'"
+            onmouseout="style.color='black'"><br>
+        </div>
+        </div>
+        </div>
+         </form>
+        <div class="rodape">
+            <footer id="informacoes">
+                <p>Endereço: AV. Domingos Ferreira, 657, Boa Viagem/Recife</p>
+                <p>Email: sabororiental@gmail.com</p>
+                <p>Telefone: +55 81 94002-8922</p>
+            </footer>
+        </div>
+
+</body>
+</html>
