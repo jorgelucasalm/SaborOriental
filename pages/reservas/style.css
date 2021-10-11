@@ -14,6 +14,29 @@ body {
   color: var(--primary-color);
 }
 
+.nav{
+  background-color: salmon;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.lista li{
+  display: inline;
+  float: left;
+}
+
+.lista li a{
+  display: block;
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.lista li a:hover{
+  color:  rgb(255, 211, 206);
+}
+
 main {
   padding: 3rem 0;
   display: flex;

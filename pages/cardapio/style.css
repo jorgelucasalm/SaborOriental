@@ -77,14 +77,12 @@ img {
   margin-top: 23vh;
 }
 
-.logo-container {
-  width: 400px;
-  height: 300px;
+.logo-container img{
   
 }
 
 .lado-esquerdo, .lado-direito {
-  font-size: 2.5em;
+  font-size: 2em;
   width: 30vw;
   height: 50vh;
   display: flex;

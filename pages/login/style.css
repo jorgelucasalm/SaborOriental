@@ -1,9 +1,36 @@
 body{
+  margin: 0;
+  padding: 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: rgb(255, 134, 97);
+  height: 100vh;
 }
 
-div{
+
+.nav{
+  margin: 0;
+  padding: 0;
+  background-color: salmon;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+.lista li{
+  display: inline;
+  float: left;
+}
+.lista li a{
+  display: block;
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+.lista li a:hover{
+  color:  rgb(255, 211, 206);
+}
+
+
+.login{
  background-color: rgba(255, 255, 255, 0.418);
   position: absolute;
   top: 50%;
