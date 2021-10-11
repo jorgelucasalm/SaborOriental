@@ -1,0 +1,93 @@
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Gang of Three';
+  src: url('../../assets/fonts/go3v2.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #f0d4cc;
+    font-family: 'Gang of Three';
+}
+
+.nav{
+  background-color: salmon;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+.lista li{
+  display: inline;
+  float: left;
+}
+.lista li a{
+  display: block;
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+.lista li a:hover{
+  color:  rgb(255, 211, 206);
+}
+
+aside {
+  font-size: 0.6em;
+  margin-left: 1vw;
+}
+
+.esconder {
+  display: none;
+}
+
+.precos {
+  display: inline-block;
+  font-family: 'Play', sans-serif;
+  color: #e43f41;
+}
+
+.precos::first-letter {
+  font-family: 'Gang of Three';
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+.cardapio-container {
+  border: 3px solid black;
+  background-color: white;
+  position: absolute;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 23vh;
+}
+
+.logo-container {
+  width: 400px;
+  height: 300px;
+  
+}
+
+.lado-esquerdo, .lado-direito {
+  font-size: 2.5em;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
