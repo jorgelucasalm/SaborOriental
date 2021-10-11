@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="../../assets/styles/global-styles.css">
 
 </head>
-<body>  
-  
+
+<body>
+
   <main>
     <section class="title">
       <h1>Pratos principais</h1>
@@ -22,42 +23,58 @@
     </section>
 
     <section class="dishes">
-      
+
       <div class="dish">
-        <img src="../../assets/images/frango-xadrez.jpg" alt="">
+        <div class="dish-img">
+          <img src="../../assets/images/frango-xadrez.jpg" alt="">
+        </div>
         <h2>Frango Xadrez</h2>
         <p>Prato chinês frito e apimentado feito com frango, amendoim, legumes, e pimenta vermelha.</p>
       </div>
 
       <div class="dish">
-        <img src="../../assets/images/chow-mein.jfif" alt="">
-        <h2>Frango Xadrez</h2>
+        <div class="dish-img">
+          <img src="../../assets/images/chow-mein.jfif" alt="">
+        </div>
+        <h2>Chow Mein</h2>
         <p>Macarrão chinês frito com legumes e carne</p>
       </div>
 
       <div class="dish">
-        <img src="../../assets/images/receita-sopa-de-wonton.jpg" alt="">
-        <h2>Frango Xadrez</h2>
+        <div class="dish-img">
+          <img src="../../assets/images/receita-sopa-de-wonton.jpg" alt="">
+        </div>
+        <h2>Sopa de Wonton</h2>
         <p>Folhas muito finas de uma massa de farinha de trigo e ovos.A</p>
       </div>
 
       <div class="dish">
-        <img src="../../assets/images/sukiyaki.jpg" alt="">
-        <h2>Frango Xadrez</h2>
-        <p>Cozido que leva carnes fatiadas bem finas, verduras, udon, cogumelos, konnyaku e ito konnyaku, kamaboku etc.</p>
+        <div class="dish-img">
+
+          <img src="../../assets/images/sukiyaki.jpg" alt="">
+        </div>
+        <h2>Sukiyaki</h2>
+        <p>Cozido que leva carnes fatiadas bem finas, verduras, udon, cogumelos, konnyaku e ito <br> konnyaku, kamaboku etc.
+        </p>
       </div>
-      
+
       <div class="dish">
-        <img src="../../assets/images/temaki.jpg" alt="">
-        <h2>Frango Xadrez</h2>
+        <div class="dish-img">
+          <img src="../../assets/images/temaki.jpg" alt="">
+
+        </div>
+        <h2>Temaki</h2>
         <p>Cone feito de folha de alga com recheio de arroz, peixe e legumes.</p>
       </div>
 
       <div class="dish">
-        <img src="../../assets/images/tempura.jpg" alt="">
-        <h2>Frango Xadrez</h2>
+        <div class="dish-img">
+          <img src="../../assets/images/tempura.jpg" alt="">
+        </div>
+        <h2>Tempura</h2>
         <p>Consiste de pedaços fritos de vegetais ou mariscos envoltos num polme fino.</p>
       </div>
+
 
     </section>
   </main>
@@ -66,12 +83,22 @@
   <script type="module">
     var slider = tns({
       container: '.dishes',
-      items: 3,
+      items: 1,
+      "slideBy": "page",
       controlsText: ['<', '>'],
-      
+      "mouseDrag": true,
+      responsive: {
+        1300: {
+          items: 3,
+        },
+        900: {
+          items: 2,
+        }
+      }
+
     });
   </script>
-  
+
 
 </body>
 
