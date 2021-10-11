@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/styles/global-styles.css">
+
+</head>
+
+<body>
+  <div class="nav">
+    <nav class="lista">
+      <ul>
+        <li><a href="../login">Login</a></li>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../cardapio">Menu</a></li>
+        <li><a href="../pratos-principais/">Pratos Populares</a></li>
+        <li><a href="../reservas/">Reservas</a></li>
+        <li><a href="../contatos/">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section class="title">
+      <h1>Pratos principais</h1>
+      <p>
+        Aqui tem os pratos principais do Sabor Oriental!
+      </p>
+    </section>
+
+    <section class="dishes">
+
+      <div class="dish">
+        <div class="dish-img">
+          <img src="../../assets/images/frango-xadrez.jpg" alt="">
+        </div>
+        <h2>Frango Xadrez</h2>
+        <p>Prato chinês frito e apimentado feito com frango, amendoim, legumes, e pimenta vermelha.</p>
+      </div>
+
+      <div class="dish">
+        <div class="dish-img">
+          <img src="../../assets/images/chow-mein.jfif" alt="">
+        </div>
+        <h2>Chow Mein</h2>
+        <p>Macarrão chinês frito com legumes e carne</p>
+      </div>
+
+      <div class="dish">
+        <div class="dish-img">
+          <img src="../../assets/images/receita-sopa-de-wonton.jpg" alt="">
+        </div>
+        <h2>Sopa de Wonton</h2>
+        <p>Folhas muito finas de uma massa de farinha de trigo e ovos.A</p>
+      </div>
+
+      <div class="dish">
+        <div class="dish-img">
+
+          <img src="../../assets/images/sukiyaki.jpg" alt="">
+        </div>
+        <h2>Sukiyaki</h2>
+        <p>Cozido que leva carnes fatiadas bem finas, verduras, udon, cogumelos, konnyaku e ito <br> konnyaku, kamaboku etc.
+        </p>
+      </div>
+
+      <div class="dish">
+        <div class="dish-img">
+          <img src="../../assets/images/temaki.jpg" alt="">
+
+        </div>
+        <h2>Temaki</h2>
+        <p>Cone feito de folha de alga com recheio de arroz, peixe e legumes.</p>
+      </div>
+
+      <div class="dish">
+        <div class="dish-img">
+          <img src="../../assets/images/tempura.jpg" alt="">
+        </div>
+        <h2>Tempura</h2>
+        <p>Consiste de pedaços fritos de vegetais ou mariscos envoltos num polme fino.</p>
+      </div>
+
+
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  <script type="module">
+    var slider = tns({
+      container: '.dishes',
+      items: 1,
+      "slideBy": "page",
+      controlsText: ['<', '>'],
+      "mouseDrag": true,
+      responsive: {
+        1300: {
+          items: 3,
+        },
+        900: {
+          items: 2,
+        }
+      }
+
+    });
+  </script>
+
+
+</body>
+
+</html>

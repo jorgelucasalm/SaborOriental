@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device.widht, initial.scale=1.0">
+   <meta http-equiv='X-UA-Compatible' content='ie-edge'>
+   <title>Tela de Login</title>
+   <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+   <div class="nav">
+      <nav class="lista">
+        <ul>
+          <li><a href="../login">Login</a></li>
+          <li><a href="../../">Home</a></li>
+          <li><a href="../cardapio">Menu</a></li>
+          <li><a href="../pratos-principais/">Pratos Populares</a></li>
+          <li><a href="../reservas/">Reservas</a></li>
+          <li><a href="../contatos/">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+   <div class="login">
+      <h1>LOGIN</h1>
+      <input id="email" type="e-mail" placeholder="E-mail">
+      <br>
+      <span id="warningEmail" ></span>
+      <br><br>
+      <input id="pass" type="password" placeholder="Senha">
+      <br>
+      <span id="warningPass" ></span>
+      <br><br>
+      <button onclick="validar()">ENTRAR</button>
+   </div>
+   <script>
+      function validar(){
+         const email = document.getElementById('email').value
+         const pass = document.getElementById('pass').value
+            const warningPass = document.getElementById('warningPass')
+            const warningEmail = document.getElementById('warningEmail')
+
+         if(!email){
+            warningEmail.innerHTML = "Email digitada errado!"
+         }
+
+         if(!pass){
+            warningPass.innerHTML = "Senha digitada errado!"
+         }
+
+         if(email && pass){
+            warningPass.innerHTML = ""
+            warningEmail.innerHTML = ""
+            window.alert('Bem vindo!')
+         }
+
+      }
+   </script>
+</body>
+<html>

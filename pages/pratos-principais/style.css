@@ -1,0 +1,102 @@
+:root{
+  --primary-color: #fa7f72;
+  --primary-color-dark: #f73520;
+  --secondary-color: #808080;
+
+  --button-hover-save: #f85241;
+  --button-hover-reset: #676767;
+
+  --warning-color: #ff0000;
+}
+
+body {
+  font-family: 'Gang', Verdana, sans-serif;
+  color: var(--primary-color);
+}
+
+.nav{
+  background-color: salmon;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.lista li{
+  display: inline;
+  float: left;
+}
+
+.lista li a{
+  display: block;
+  color: white;
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+.lista li a:hover{
+  color:  rgb(255, 211, 206);
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.title h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.tns-controls {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tns-controls [aria-controls] {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 0 1em;
+  height: 2.5em;
+  color: white;
+  background: var(--primary-color);
+  border-radius: 3px;
+  border: 0;
+}
+
+.tns-nav {
+  display: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.dishes {
+  padding-bottom: 3rem;
+}
+
+.dish-img {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.dish-img img{
+  width: 400px;
+  border-radius: 5px;
+}
+
+.dish p, h2 {
+  padding: 1rem 0rem;
+  text-align: center;
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+  .dish-img img{
+    width: 400px;
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor Oriental</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../assets/styles/global-styles.css">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <nav class="lista">
+      <ul>
+        <li><a href="../login">Login</a></li>
+        <li><a href="../../">Home</a></li>
+        <li><a href="../cardapio">Menu</a></li>
+        <li><a href="../pratos-principais/">Pratos Populares</a></li>
+        <li><a href="../reservas/">Reservas</a></li>
+        <li><a href="../contatos/">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <div class="container">
+      <section class="register">
+        <h1 class="title">Cadastre sua reserva aqui!</h1>
+        <fieldset>
+          <form action="">
+
+            <div class="date-time">
+              <div class="section-date">
+                <label for="date">Data:<input type="date" id="date"></label>
+                <span class="date-warning warning"></span>
+              </div>
+              <div class="section-time">
+                <label for="time">Hora:<input type="time" id="time"></label>
+                <span class="time-warning warning"></span>
+              </div>
+            </div>
+
+            <label for="people">Pessoas:
+              <select id="people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </label>
+
+            <div class="name-email">
+              <h2>Contato Principal</h2>
+              <label for="name">Nome:<input type="text" id="name"></label>
+              <span class="name-warning warning"></span>
+
+              <label for="email">Email:<input type="email" id="email"></label>
+              <span class="email-warning warning"></span>
+            </div>
+
+            <div class="buttons">
+              <input type="button" value="Salvar" onclick="save()">
+              <input type="reset" value="Cancelar">
+            </div>
+          </form>
+        </fieldset>
+      </section>
+      <section class="logo">
+        <img src="../../assets/images/logo-teste.jfif" alt="">
+      </section>
+    </div>
+  </main>
+
+  <div class="modal">
+    <div class="modal-content">
+      <h3>
+        Você foi registrado com sucesso!
+      </h3>
+      <p>
+        Obrigado pela reserva no Sabor Oriental.
+      </p>
+      <div class="close-button">
+        <input type="button" value="Ok" onclick="closeModal()">
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
