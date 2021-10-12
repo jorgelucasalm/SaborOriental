@@ -55,3 +55,7 @@ function closeModal() {
   const modal = document.querySelector(".modal");
   modal.style.visibility = "hidden";
 }
+
+function reset(){
+  alert("Seu cadastro foi cancelado!");
+}
